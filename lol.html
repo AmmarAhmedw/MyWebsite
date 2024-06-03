@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammar Hamza - Personal Webpage</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #f4f4f9;
+            text-align: center;
+        }
+        header {
+            background-color: #1f1f1f;
+            color: #f4f4f9;
+            padding: 20px 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #f4f4f9;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #1abc9c;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section:nth-of-type(even) {
+            background-color: #1c1c1c;
+        }
+        .section h2 {
+            margin-bottom: 30px;
+            font-size: 2em;
+            color: #1abc9c;
+        }
+        .about-me p, .contact p, .skills p, .projects p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .skills ul, .projects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills ul li, .projects ul li {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .skills ul li:hover {
+            background-color: #1abc9c;
+            color: #121212;
+            transform: scale(1.05);
+        }
+        .projects ul li:hover {
+            background-color: #1abc9c;
+            color: #121212;
+            transform: scale(1.05);
+        }
+        .resume {
+            margin: 30px 0;
+        }
+        .resume a {
+            text-decoration: none;
+            color: #1abc9c;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            font-size: 1.1em;
+        }
+        .resume a:hover {
+            color: #16a085;
+        }
+        .contact-info {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .contact-info p, .contact-info a {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .contact-info a {
+            color: #1abc9c;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact-info a:hover {
+            color: #16a085;
+        }
+        .contact-form {
+            max-width: 600px;
+            width: 100%;
+            margin: 30px auto 0;
+            padding: 30px;
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        .contact-form input, .contact-form textarea {
+            width: calc(100% - 20px);
+            padding: 15px;
+            margin: 15px 0;
+            border: 1px solid #333;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1.1em;
+            background-color: #121212;
+            color: #f4f4f9;
+        }
+        .contact-form button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1abc9c;
+            color: #121212;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 1.1em;
+        }
+        .contact-form button:hover {
+            background-color: #16a085;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #1f1f1f;
+            color: #f4f4f9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ammar Hamza</h1>
+            <nav>
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section about-me">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm Ammar Hamza. I am a software developer with expertise in Python, C++, JavaScript, HTML, CSS, and React. I am currently a project manager for csgobook.com and csgoradar.com. I have additional certifications in Google Data Analysis from Coursera and completed the 100 Days of Machine Learning course by CampusX. I began my career as an Associate Software Engineer – Cloud Management at i2c Inc. and have developed skills in infrastructure evaluation, research and development, and implementing innovative solutions using tools like Docker, Kubernetes, Grafana, Promtail, Loki, and Bash Python. I have collaborated with the development team to create a user-interface using Flutter, successfully launched a Flutter-based mobile app, integrated APIs for a faster data retrieval and processing experience, and am proficient in Flutter with expertise in Getx for efficient state management and navigation.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>C++</li>
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+                <li>React</li>
+                <li>Docker & Kubernetes</li>
+                <li>Flutter & Dart</li>
+                <li>API Integration</li>
+                <li>Data Analysis</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>E-commerce Website:</strong> Built with React and Node.js, featuring a dynamic product catalog, user authentication, and a secure payment gateway.</li>
+                <li><strong>Task Management App:</strong> Developed using Flutter and Firebase, allowing users to create, update, and delete tasks with real-time synchronization.</li>
+                <li><strong>Data Analysis Dashboard:</strong> Created with Python and Dash, providing visual insights and analytics for large datasets, including interactive graphs and charts.</li>
+                <li><strong>Personal Blog:</strong> Built with Django and React, featuring a content management system, user authentication, and comment functionality.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume" class="section resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>You can download my resume by clicking the link below:</p>
+            <a href="/mnt/data/AmmarAhmedResume.pdf" download="AmmarAhmedResume.pdf">Download Resume</a>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, please use the form below or reach out via email or phone.</p>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:ammarhamza960@gmail.com">ammarhamza960@gmail.com</a></p>
+                <p>Phone: +123 456 7890</p>
+                <p>Follow me on social media:</p>
+                <p>
+                    <a href="#">LinkedIn</a> |
+                    <a href="#">Twitter</a> |
+                    <a href="#">GitHub</a>
+                </p>
+            </div>
+            <form class="contact-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <?php
